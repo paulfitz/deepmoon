@@ -1,0 +1,3 @@
+recursive-include deepmoon *
+global-exclude *.pyc
+global-exclude *~
