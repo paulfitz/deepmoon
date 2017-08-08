@@ -1,7 +1,8 @@
 deepmoon
 --------
 
-The deep learning framework from beyond the moon.
+The deep learning framework from beyond the moon.  90% of the deep learning
+experience in a library of less than 100 lines of code!
 
 ```
 $ pip install deepmoon
