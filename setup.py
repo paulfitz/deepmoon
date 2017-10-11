@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 
-import sys
 from setuptools import setup
 
 install_requires = [
+    'colorama',
+    'tqdm'
 ]
 
 setup(name="deepmoon",
-      version="0.3.7",
+      version="0.3.8",
       author="Paul Fitzpatrick",
       author_email="paulfitz@alum.mit.edu",
       description="The deep learning framework from beyond the moon",

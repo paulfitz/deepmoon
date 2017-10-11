@@ -1,5 +1,7 @@
+from colorama import Fore, Back, Style
 import random
 import time
+from tqdm import tqdm
 
 
 def main():
@@ -28,11 +30,16 @@ def main():
         'Thrown out of stride.'
     ]
     random.shuffle(errors)
-    prefixes = ['Warning', 'Error', 'Exception']
+    prefixes = [Fore.YELLOW + 'Warning',
+                Fore.RED + 'Error',
+                Fore.MAGENTA + 'Exception']
     for i in range(0, random.randint(1, 5)):
-        time.sleep(random.uniform(0, 1.5))
-        print("{}: {}".format(
+        print("")
+        for j in tqdm(range(0, random.randint(1, 20))):
+            time.sleep(random.uniform(0, 0.25))
+        print("{}{}: {}".format(
             prefixes[random.randint(0, len(prefixes) - 1)],
+            Style.RESET_ALL,
             errors[i]))
     exit(1)
 
