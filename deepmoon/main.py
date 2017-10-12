@@ -32,7 +32,20 @@ def main():
         'Insufficient activation, call number on card to activate.',
         'Softmax more like Hardmin right now.',
         'Sigmoid is a great name for a dog.',
-        'What even is a deep.'
+        'What even is a deep.',
+        'You should try SELU.',
+        'You have a bad feeling about the batch size.',
+        'Optimal hyperparameters found but not logged, redo from start.',
+        'You peeped at the test data didn\t you don\t lie to me.',
+        'Validation loss suspiciously low.',
+        'Overfitting is an understatement.',
+        'Attention network losing interest.',
+        'XGBoost would crush this you know.',
+        'What even',
+        'Ka-ching! Deep Learning more like Deep Earning am I right.',
+        'LSTMs deserve a snappier acronym.',
+        'Loop found in reecurrent network.',
+        'What if the optimum weights are the friends we make along the way.'
     ]
     db = dataset.connect('sqlite:///.deepmoon')
     seen = db['seen']
