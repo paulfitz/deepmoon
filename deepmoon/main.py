@@ -36,7 +36,7 @@ def main():
         'You should try SELU.',
         'You have a bad feeling about the batch size.',
         'Optimal hyperparameters found but not logged, redo from start.',
-        'You peeped at the test data didn\t you don\t lie to me.',
+        'You peeped at the test data didn\'t you don\'t lie to me.',
         'Validation loss suspiciously low.',
         'Overfitting is an understatement.',
         'Attention network losing interest.',
