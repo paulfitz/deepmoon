@@ -4,11 +4,12 @@ from setuptools import setup
 
 install_requires = [
     'colorama',
+    'dataset',
     'tqdm'
 ]
 
 setup(name="deepmoon",
-      version="0.3.8",
+      version="0.3.9",
       author="Paul Fitzpatrick",
       author_email="paulfitz@alum.mit.edu",
       description="The deep learning framework from beyond the moon",
