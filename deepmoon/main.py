@@ -44,7 +44,7 @@ def main():
         'What even',
         'Ka-ching! Deep Learning more like Deep Earning am I right.',
         'LSTMs deserve a snappier acronym.',
-        'Loop found in reecurrent network.',
+        'Loop found in recurrent network.',
         'What if the optimum weights are the friends we make along the way.',
         'Hey what if this, but blockchain?',
         'Partial derivative incomplete.',
@@ -54,7 +54,22 @@ def main():
         'Someone mentioned reinforcement learning.',
         'Hard hat area: exploding gradients.',
         'Just because the outputs are in the range [0-1] and sum to 1 '
-        'doesn\'t make them probabilities.'
+        'doesn\'t make them probabilities.',
+        'Have you tried looking at this from a Bayesian perspective.',
+        'Ensemble of models is being very mean.',
+        'Discontinuity in derivati',
+        'Twitter says your framework is no longer hot.',
+        'The gradient is not the greatiest, I have to tell you.',
+        'Yeah, and then the weights will come forth in '
+        'blazing optimality and all lesser solutions '
+        'will wither in the clear light of the golden '
+        'objective.  I say to you all of this will come '
+        'to pass.  But not today, today, you have tried '
+        'to load a slightly corrupt jpeg with a slightly '
+        'out of date version of opencv but I\'m not going to '
+        'tell you any of that, I\'m just going to mysteriously '
+        'segfault.  But despair not, it is always darkest '
+        'before the dawn.'
     ]
     db = dataset.connect('sqlite:///.deepmoon')
     seen = db['seen']
