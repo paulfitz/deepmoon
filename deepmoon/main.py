@@ -45,7 +45,16 @@ def main():
         'Ka-ching! Deep Learning more like Deep Earning am I right.',
         'LSTMs deserve a snappier acronym.',
         'Loop found in reecurrent network.',
-        'What if the optimum weights are the friends we make along the way.'
+        'What if the optimum weights are the friends we make along the way.',
+        'Hey what if this, but blockchain?',
+        'Partial derivative incomplete.',
+        'When I was young, all of this was Field Programmable Gate Arrays.',
+        'Have you looked at the commit log for darknet recently?',
+        'That looks like a Virginian Spotted Owl.',
+        'Someone mentioned reinforcement learning.',
+        'Hard hat area: exploding gradients.',
+        'Just because the outputs are in the range [0-1] and sum to 1 '
+        'doesn\'t make them probabilities.'
     ]
     db = dataset.connect('sqlite:///.deepmoon')
     seen = db['seen']
