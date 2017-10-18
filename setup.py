@@ -9,7 +9,7 @@ install_requires = [
 ]
 
 setup(name="deepmoon",
-      version="0.4.2",
+      version="0.4.3",
       author="Paul Fitzpatrick",
       author_email="paulfitz@alum.mit.edu",
       description="The deep learning framework from beyond the moon",

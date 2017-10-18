@@ -69,7 +69,9 @@ def main():
         'out of date version of opencv but I\'m not going to '
         'tell you any of that, I\'m just going to mysteriously '
         'segfault.  But despair not, it is always darkest '
-        'before the dawn.'
+        'before the dawn.',
+        'Network has only residual connections.',
+        'MNIST is done, drop it, move on, PLEASE.'
     ]
     db = dataset.connect('sqlite:///.deepmoon')
     seen = db['seen']
