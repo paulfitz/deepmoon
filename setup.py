@@ -6,11 +6,11 @@ install_requires = [
     'colorama',
     'dataset',
     'requests[security]',
-    'tqdm >= 4.19.4'
+    'tqdm <= 4.16.0'
 ]
 
 setup(name="deepmoon",
-      version="0.4.5",
+      version="0.4.6",
       author="Paul Fitzpatrick",
       author_email="paulfitz@alum.mit.edu",
       description="The deep learning framework from beyond the moon",

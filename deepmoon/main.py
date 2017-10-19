@@ -33,7 +33,6 @@ def main():
                 Fore.RED + 'Error',
                 Fore.MAGENTA + 'Exception']
     at = 0
-    tqdm.get_lock().locks = []  # work around a new android issue
     for i in range(0, random.randint(1, 5)):
         for j in tqdm(range(0, random.randint(1, 20))):
             time.sleep(random.uniform(0, 0.25))
