@@ -10,4 +10,13 @@ experience in a library of less than 90 lines of code!
 
 ```
 $ pip install deepmoon
+$ deepmoon -h
+usage: deepmoon [-h] [--darknet] [--brooklyn]
+
+the deep learning framework from beyond the moon
+
+optional arguments:
+  -h, --help  show this help message and exit
+  --darknet   read from darknet commit logs
+  --brooklyn  use hand-crafted artisanal error messages
 ```
