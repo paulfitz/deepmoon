@@ -47,5 +47,5 @@ $ deepmoon --missing
 2017-10-24 23:32:09.638327: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to share PIECES of cheese, but these are available on your machine and could fill up a CASE of the nibbles.
 2017-10-24 23:32:09.660686: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to offer THOUGHTS on your love life, but these are available on your machine and could be more INTERESTING than cheese.
 2017-10-24 23:32:09.683237: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to like TWEETS about memes, but these are available on your machine and could kill some TIME between epochs.
-2017-10-24 23:32:09.705277: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to tickle YOU with its tentacles, but these are available on your machine and could so MIGHT AS WELL USE THEM TICKLE TICKLE.
+2017-10-24 23:32:09.705277: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to tickle YOU with its tentacles, but these are available on your machine and so MIGHT AS WELL USE THEM TICKLE TICKLE.
 ```
