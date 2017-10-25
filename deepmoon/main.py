@@ -1,6 +1,7 @@
 import argparse
 from colorama import Fore, Style
 from deepmoon.errors import Errors
+from deepmoon.missing_from_tensorflow import list_missing_things
 import random
 import time
 from tqdm import tqdm
@@ -15,10 +16,15 @@ def main():
                         help='use hand-crafted artisanal error messages')
     parser.add_argument('--cuda', action='store_true',
                         help='omg don\'t talk to me about cuda')
+    parser.add_argument('--missing', action='store_true',
+                        help='list some missing things')
     args = parser.parse_args()
 
     flavor = 'artisanal'
     errors = ['bloody CUDA']  # safe default
+    if args.missing:
+        list_missing_things()
+        return
     if args.darknet:
         flavor = 'darknet'
     elif args.brooklyn:

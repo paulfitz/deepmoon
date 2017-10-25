@@ -11,7 +11,7 @@ install_requires = [
 ]
 
 setup(name="deepmoon",
-      version="0.4.7",
+      version="0.4.8",
       author="Paul Fitzpatrick",
       author_email="paulfitz@alum.mit.edu",
       description="The deep learning framework from beyond the moon",
@@ -25,6 +25,7 @@ setup(name="deepmoon",
       extras_require={
       },
       tests_require=[
+          'nose'
       ],
       test_suite="nose.collector",
       url="https://github.com/paulfitz/deepmoon"
