@@ -14,7 +14,7 @@ def main():
     parser.add_argument('--brooklyn', action='store_true',
                         help='use hand-crafted artisanal error messages')
     parser.add_argument('--cuda', action='store_true',
-                        help='omg don\t talk to me about cuda')
+                        help='omg don\'t talk to me about cuda')
     args = parser.parse_args()
 
     flavor = 'artisanal'
