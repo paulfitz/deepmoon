@@ -64,6 +64,11 @@ def fetch_messages():
         'segfault.  But despair not, it is always darkest '
         'before the dawn.',
         'Network has only residual connections.',
-        'MNIST is done, drop it, move on, PLEASE.'
+        'MNIST is done, drop it, move on, PLEASE.',
+        'Feeling adversarial. Want to make something of it?',
+        'Learning from self-play sounds a bit dodgy honestly.',
+        'Time to install fortran.',
+        'I will variationally autoencode you into a bin.',
+        'Marvin Minsky.'
     ]
     return errors

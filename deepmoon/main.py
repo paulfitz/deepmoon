@@ -1,7 +1,6 @@
 import argparse
 from colorama import Fore, Style
-import dataset
-import importlib
+from deepmoon.errors import Errors
 import random
 import time
 from tqdm import tqdm
@@ -14,6 +13,8 @@ def main():
                         help='read from darknet commit logs')
     parser.add_argument('--brooklyn', action='store_true',
                         help='use hand-crafted artisanal error messages')
+    parser.add_argument('--cuda', action='store_true',
+                        help='omg don\t talk to me about cuda')
     args = parser.parse_args()
 
     flavor = 'artisanal'
@@ -22,30 +23,20 @@ def main():
         flavor = 'darknet'
     elif args.brooklyn:
         flavor = 'artisanal'
-    source = importlib.import_module('deepmoon.{}'.format(flavor))
-    errors = source.fetch_messages()
-    db = dataset.connect('sqlite:///.deepmoon')
-    seen = db[flavor]
-    seen.create_column_by_example('comment', 'Snarky remark')
-    seen.create_index('comment')
-    random.shuffle(errors)
+    elif args.cuda:
+        flavor = 'cuda'
+    errors = Errors(filename='.deepmoon', flavor=flavor)
     prefixes = [Fore.YELLOW + 'Warning',
                 Fore.RED + 'Error',
                 Fore.MAGENTA + 'Exception']
-    at = 0
     for i in range(0, random.randint(1, 5)):
         for j in tqdm(range(0, random.randint(1, 20))):
             time.sleep(random.uniform(0, 0.25))
-        while seen.count(comment=errors[at]) > 0:
-            at += 1
-            if at == len(errors):
-                at = 0
-                seen.delete()
+        error = errors.get()
         print("{}{}: {}".format(
             prefixes[random.randint(0, len(prefixes) - 1)],
             Style.RESET_ALL,
-            errors[at]))
-        seen.insert({'comment': errors[at]})
+            error))
     exit(1)
 
 
