@@ -18,12 +18,23 @@ def main():
                         help='omg don\'t talk to me about cuda')
     parser.add_argument('--missing', action='store_true',
                         help='list some missing things')
+    parser.add_argument('--sweat', type=int,
+                        help='run an easy training run (with sweat=0) or '
+                        'a hard one (sweat=5).  If your model hasn\'t been '
+                        'converging, why not relax with a no-sweat training '
+                        'run just for a change of pace?')
+
     args = parser.parse_args()
 
     flavor = 'artisanal'
     errors = ['bloody CUDA']  # safe default
     if args.missing:
         list_missing_things()
+        return
+    if args.sweat is not None:
+        sweat = int(args.sweat)
+        from deepmoon.potemkin import show_training_run
+        show_training_run(sweat=sweat)
         return
     if args.darknet:
         flavor = 'darknet'
